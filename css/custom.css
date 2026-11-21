@@ -1,0 +1,1255 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+.contact-section {
+	background: #f8f6f0;
+	padding: 9rem 0 8rem;
+}
+
+.contact-layout {
+	display: grid;
+	grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+	gap: clamp(3rem, 8vw, 8rem);
+	align-items: start;
+}
+
+.contact-intro {
+	padding-top: 1.5rem;
+}
+
+.contact-eyebrow {
+	color: #74784a;
+	display: inline-block;
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	margin-bottom: 1.25rem;
+}
+
+.contact-intro h1 {
+	color: #2d3025;
+	font-size: clamp(2.2rem, 3.2vw, 3.5rem);
+	line-height: 1.08;
+	margin: 0 0 1.5rem;
+}
+
+.contact-intro > p {
+	color: #6b6c62;
+	font-size: 1.05rem;
+	line-height: 1.8;
+	max-width: 29rem;
+}
+
+.contact-details {
+	display: grid;
+	gap: 1.5rem;
+	margin-top: 3.5rem;
+}
+
+.contact-detail {
+	align-items: center;
+	color: #2d3025;
+	display: flex;
+	font-size: 1rem;
+	gap: 1rem;
+	text-decoration: none;
+}
+
+.contact-detail:hover { color: #74784a; }
+
+.contact-detail-icon {
+	align-items: center;
+	background: #e4d5ad;
+	border-radius: 50%;
+	color: #74784a;
+	display: inline-flex;
+	height: 3rem;
+	justify-content: center;
+	width: 3rem;
+}
+
+.contact-detail small {
+	color: #8b8c82;
+	display: block;
+	font-size: 0.7rem;
+	letter-spacing: 0.12em;
+	margin-bottom: 0.2rem;
+	text-transform: uppercase;
+}
+
+.contact-form-wrap {
+	background: #fff;
+	box-shadow: 0 1.5rem 4rem rgba(45, 48, 37, 0.08);
+	margin-top: -1.5rem;
+	padding: clamp(2rem, 5vw, 4rem);
+}
+
+.contact-form-wrap h2 {
+	color: #2d3025;
+	font-size: 2rem;
+	margin: 0 0 2rem;
+}
+
+.contact-form-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1.25rem;
+}
+
+.contact-form .form-group { margin-bottom: 1.25rem; }
+
+.contact-form label {
+	color: #4f5148;
+	display: block;
+	font-size: 0.8rem;
+	font-weight: 700;
+	margin-bottom: 0.55rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+	background: #faf9f5;
+	border: 1px solid #e4e2d9;
+	border-radius: 0;
+	box-sizing: border-box;
+	color: #2d3025;
+	font: inherit;
+	padding: 0.9rem 1rem;
+	resize: vertical;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+	width: 100%;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	border-color: #74784a;
+	box-shadow: 0 0 0 3px rgba(116, 120, 74, 0.12);
+	outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder { color: #a7a79e; }
+
+.contact-submit {
+	border: 0;
+	cursor: pointer;
+	margin-top: 0.5rem;
+}
+
+.contact-submit i { margin-left: 0.5rem; }
+
+.copyright-row {
+	align-items: center;
+	display: flex;
+	gap: 1.5rem;
+	justify-content: space-between;
+	width: 100%;
+	height: 50px;
+}
+
+.copyright-text {
+	color: rgba(255, 255, 255, 0.72);
+	font-size: 0.875rem;
+	min-width: 0;
+	white-space: nowrap;
+}
+
+#copyrights .copyright-text a { color: #e4d5ad; }
+
+#copyrights {
+	padding: 0 0;
+	border-top: 0;
+}
+
+#footer {
+	border-top: 0;
+	border-bottom: 0;
+}
+
+#footer .footer-widgets-wrap {
+	padding: 2rem 0;
+}
+
+html,
+body {
+	background-color: #4f5b2a;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+#footer #copyrights {
+	background-color: #3f4922;
+}
+
+@media (min-width: 992px) {
+	#footer .footer-widgets-wrap .widget {
+		margin-top: 0;
+	}
+}
+
+.copyright-brand {
+	flex: 0 0 auto;
+}
+
+.copyright-brand img {
+	display: block;
+	width: 175px;
+}
+
+@media (max-width: 767px) {
+	.contact-section { padding: 6rem 0; }
+	.contact-layout { grid-template-columns: 1fr; gap: 3.5rem; }
+	.contact-intro { padding-top: 0; }
+	.contact-details { margin-top: 2.5rem; }
+	.contact-form-row { grid-template-columns: 1fr; gap: 0; }
+	.contact-form-wrap { margin-top: 0; }
+	.copyright-row { gap: 0.75rem; }
+	.copyright-text { font-size: 0.68rem; }
+	.copyright-brand img { width: 105px; }
+}
+
+/* ----------------------------------------------------------------
+	Hakkımda (About) Section — tek ekrana sığacak şekilde
+-----------------------------------------------------------------*/
+#hakkimda {
+	padding: 4rem 0 2.5rem;
+}
+
+#hakkimda .cp-loyalty-img-wrap {
+	border-radius: 20px;
+	box-shadow: 0 30px 70px rgba(0, 0, 0, 0.3);
+}
+
+#hakkimda .cp-loyalty-img {
+	aspect-ratio: 4 / 5;
+}
+
+#hakkimda .cp-loyalty-text .cp-section-title {
+	position: relative;
+	display: inline-block;
+	letter-spacing: 0.06em;
+	padding-bottom: 0.45rem;
+	font-size: clamp(1.6rem, 2.6vw, 2.3rem);
+}
+
+#hakkimda .cp-loyalty-text .cp-section-title::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3px;
+	border-radius: 3px;
+	background: var(--cp-sand);
+	opacity: 0.85;
+}
+
+#hakkimda .cp-loyalty-text .cp-section-sub {
+	font-size: 1rem;
+	line-height: 1.65;
+	max-width: none;
+	margin-bottom: 0.75rem;
+	text-wrap: pretty;
+}
+
+#hakkimda .cp-loyalty-text .cp-section-sub:last-child {
+	margin-bottom: 0;
+}
+
+@media (min-width: 769px) {
+	#hakkimda {
+		display: flex;
+		align-items: center;
+		min-height: 100vh;
+		padding: 6rem 0 2.5rem;
+		box-sizing: border-box;
+	}
+
+	#hakkimda > .container {
+		width: 100%;
+	}
+
+	#hakkimda .cp-loyalty-inner {
+		grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+		gap: clamp(1.75rem, 3.5vw, 3rem);
+		align-items: center;
+	}
+
+	#hakkimda .cp-loyalty-img-wrap {
+		height: min(72vh, 620px);
+	}
+
+	#hakkimda .cp-loyalty-img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		aspect-ratio: auto;
+	}
+}
+
+/* ----------------------------------------------------------------
+	Ana Sayfa Hero
+-----------------------------------------------------------------*/
+#home .cp-hero-bg {
+	background-position: center 42%;
+}
+
+#home .cp-hero-scrim {
+	background:
+		radial-gradient(ellipse at center, rgba(15, 35, 30, 0.15) 0%, rgba(15, 35, 30, 0.55) 68%, rgba(15, 35, 30, 0.82) 100%),
+		linear-gradient(to bottom, rgba(15, 35, 30, 0.5) 0%, rgba(15, 35, 30, 0.3) 45%, rgba(15, 35, 30, 0.62) 100%);
+}
+
+#home .cp-hero-inner {
+	max-width: 900px;
+}
+
+#home .cp-hero h1 {
+	letter-spacing: -0.01em;
+	line-height: 1.04;
+	text-shadow: 0 2px 30px rgba(0, 0, 0, 0.28);
+}
+
+#home .cp-hero-inner h1 + p::before {
+	content: "";
+	display: block;
+	width: 70px;
+	height: 2px;
+	margin: 0 auto 1.35rem;
+	border-radius: 2px;
+	background: var(--cp-sand);
+	opacity: 0.9;
+}
+
+#home .cp-hero p {
+	max-width: 60ch;
+	color: rgba(255, 255, 255, 0.9);
+	letter-spacing: 0.01em;
+}
+
+/* ----------------------------------------------------------------
+	Eğitimler
+----------------------------------------------------------------- */
+#egitimler.cp-menu-section {
+	background: var(--cp-cream);
+}
+
+#egitimler .cp-label {
+	color: var(--cp-jade-deep);
+}
+
+#egitimler .cp-section-sub {
+	max-width: 62ch;
+}
+
+#egitimler .cp-section-title {
+	position: relative;
+	display: inline-block;
+	letter-spacing: 0.06em;
+	padding-bottom: 0.45rem;
+	font-size: clamp(1.6rem, 2.6vw, 2.3rem);
+	color: var(--cp-muted);
+	margin-bottom: 1.25rem;
+}
+
+#egitimler .cp-section-title::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3px;
+	border-radius: 3px;
+	background: var(--cp-sand);
+	opacity: 0.85;
+}
+
+.cp-train-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1.5rem;
+	margin-top: 3.25rem;
+}
+
+.cp-train-grid:empty {
+	display: none;
+}
+
+.cp-train-card {
+	position: relative;
+	flex: 1 1 320px;
+	max-width: 400px;
+	padding: 2rem 1.75rem 1.9rem;
+	background: #fff;
+	border: 1px solid rgba(79, 91, 42, 0.14);
+	border-radius: 18px;
+	box-shadow: 0 1px 2px rgba(26, 43, 40, 0.04);
+	transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.cp-train-card::after {
+	content: "";
+	position: absolute;
+	left: 1.75rem;
+	right: 1.75rem;
+	bottom: 0;
+	height: 3px;
+	background: var(--cp-jade);
+	border-radius: 3px 3px 0 0;
+	transform: scaleX(0);
+	transform-origin: left center;
+	transition: transform 0.35s ease;
+}
+
+.cp-train-card:hover {
+	transform: translateY(-6px);
+	box-shadow: 0 24px 50px rgba(26, 43, 40, 0.12);
+	border-color: rgba(79, 91, 42, 0.28);
+}
+
+.cp-train-card:hover::after {
+	transform: scaleX(1);
+}
+
+.cp-train-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 54px;
+	height: 54px;
+	margin-bottom: 1.35rem;
+	background: var(--cp-jade-light);
+	color: var(--cp-jade);
+	border-radius: 16px;
+	font-size: 1.45rem;
+	line-height: 1;
+}
+
+.cp-train-year {
+	position: absolute;
+	top: 1.75rem;
+	right: 1.75rem;
+	font-size: 0.8rem;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	color: var(--cp-jade);
+}
+
+.cp-train-eyebrow {
+	margin-bottom: 0.45rem;
+	font-family: var(--cnvs-primary-font);
+	font-size: 0.7rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: var(--cp-jade-deep);
+}
+
+.cp-train-title {
+	margin: 0 0 0.65rem;
+	font-family: var(--cnvs-primary-font);
+	font-size: 1.15rem;
+	font-weight: 700;
+	line-height: 1.25;
+	color: var(--cp-ink);
+}
+
+.cp-train-desc {
+	margin: 0;
+	font-size: 0.95rem;
+	line-height: 1.7;
+	color: var(--cp-muted);
+}
+
+@media (max-width: 991px) {
+	.cp-train-grid {
+		gap: 1.25rem;
+		margin-top: 2.5rem;
+	}
+}
+
+@media (max-width: 640px) {
+	.cp-train-card {
+		flex-basis: 100%;
+		max-width: none;
+		padding: 1.6rem 1.4rem 1.5rem;
+	}
+
+	.cp-train-card::after {
+		left: 1.4rem;
+		right: 1.4rem;
+	}
+}
+
+/* ----------------------------------------------------------------
+	Sertifikalar (Eğitimler bölümü içinde)
+----------------------------------------------------------------- */
+.cp-cert-block {
+	margin-top: 4rem;
+	padding-top: 3.25rem;
+	border-top: 1px solid rgba(79, 91, 42, 0.16);
+}
+
+.cp-subsection-title {
+	font-family: var(--cnvs-secondary-font);
+	font-size: clamp(1.6rem, 3vw, 2.25rem);
+	line-height: 1.15;
+	color: var(--cp-ink);
+	margin-bottom: 0.6rem;
+}
+
+.cp-cert-carousel.owl-carousel {
+	margin-top: 3.25rem;
+}
+
+.cp-cert-carousel .cp-train-card {
+	flex: none;
+	width: 100%;
+	max-width: none;
+	height: 100%;
+	min-height: 230px;
+}
+
+.cp-cert-carousel .cp-train-card:hover {
+	transform: none;
+}
+
+.cp-cert-grid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 1.5rem;
+	margin-top: 3.25rem;
+}
+
+.cp-cert-grid .cp-train-card {
+	flex: none;
+	width: 100%;
+	max-width: none;
+}
+
+.cp-cert-block .owl-carousel .owl-nav [class*="owl-"] {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1rem;
+	line-height: 1;
+	background-color: #fff;
+	border-color: rgba(79, 91, 42, 0.22);
+	color: var(--cp-jade);
+	opacity: 1;
+	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.cp-cert-block .owl-carousel .owl-nav [class*="owl-"]:hover {
+	background-color: var(--cp-jade) !important;
+	border-color: var(--cp-jade);
+	color: #fff !important;
+}
+
+.cp-cert-block .owl-carousel .owl-dots .owl-dot {
+	background-color: var(--cp-jade);
+	opacity: 0.3;
+}
+
+.cp-cert-block .owl-carousel .owl-dots .owl-dot.active,
+.cp-cert-block .owl-carousel .owl-dots .owl-dot:hover {
+	background-color: var(--cp-jade);
+	opacity: 1;
+}
+
+@media (max-width: 768px) {
+	.cp-cert-carousel.owl-carousel {
+		margin-top: 2.5rem;
+	}
+
+	.cp-cert-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1.25rem;
+		margin-top: 2.5rem;
+	}
+}
+
+@media (max-width: 575px) {
+	.cp-cert-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* ----------------------------------------------------------------
+	Psikoterapi Yaklaşımları
+----------------------------------------------------------------- */
+#psikoterapi-yaklasimlari .cp-section-title {
+	position: relative;
+	display: inline-block;
+	letter-spacing: 0.06em;
+	padding-bottom: 0.45rem;
+	font-size: clamp(1.6rem, 2.6vw, 2.3rem);
+	color: var(--cp-ink);
+	margin-bottom: 1.25rem;
+}
+
+#psikoterapi-yaklasimlari .cp-section-title::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3px;
+	border-radius: 3px;
+	background: var(--cp-sand);
+	opacity: 0.85;
+}
+
+#psikoterapi-yaklasimlari .cp-origins-grid {
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 1.5rem;
+}
+
+#psikoterapi-yaklasimlari .cp-origin-body {
+	padding: 1.5rem 1.35rem;
+}
+
+#psikoterapi-yaklasimlari .cp-origin-title {
+	font-size: clamp(1.15rem, 1.6vw, 1.35rem);
+	margin-bottom: 0.55rem;
+}
+
+@media (max-width: 1100px) {
+	#psikoterapi-yaklasimlari .cp-origins-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 600px) {
+	#psikoterapi-yaklasimlari .cp-origins-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+/* ----------------------------------------------------------------
+	Eğitimler + Sertifikalar — tek ekran
+----------------------------------------------------------------- */
+@media (min-width: 769px) {
+	#egitimler {
+		display: flex;
+		align-items: center;
+		min-height: 100vh;
+		padding: clamp(4.5rem, 7.5vh, 6rem) 0 clamp(1.5rem, 3vh, 2.25rem);
+		box-sizing: border-box;
+	}
+
+	#egitimler > .container {
+		width: 100%;
+	}
+
+	#egitimler .text-center.mb-5 {
+		margin-bottom: clamp(1.5rem, 3vh, 2.25rem) !important;
+	}
+
+	#egitimler .cp-section-sub {
+		font-size: 0.98rem;
+	}
+
+	#egitimler .cp-train-grid {
+		margin-top: 0;
+		gap: clamp(1.25rem, 2.5vh, 2rem);
+	}
+
+	#egitimler .cp-train-grid .cp-train-card {
+		padding: clamp(1.5rem, 3vh, 2.2rem) clamp(1.5rem, 1.6vw, 1.9rem);
+	}
+
+	#egitimler .cp-train-icon {
+		width: clamp(48px, 6vh, 58px);
+		height: clamp(48px, 6vh, 58px);
+		margin-bottom: clamp(1rem, 2vh, 1.5rem);
+		border-radius: 13px;
+		font-size: clamp(1.2rem, 1.6vh, 1.4rem);
+	}
+
+	#egitimler .cp-train-year {
+		top: 1.3rem;
+		right: 1.5rem;
+	}
+
+	#egitimler .cp-train-title {
+		margin-bottom: 0.4rem;
+		font-size: 1.08rem;
+	}
+
+	#egitimler .cp-train-desc {
+		font-size: 0.92rem;
+		line-height: 1.5;
+	}
+
+	#egitimler .cp-cert-block {
+		margin-top: clamp(2rem, 4.2vh, 3.25rem);
+		padding-top: clamp(1.5rem, 3vh, 2.25rem);
+	}
+
+	#egitimler .cp-cert-carousel.owl-carousel {
+		margin-top: clamp(1.25rem, 2.5vh, 2rem);
+	}
+
+	#egitimler .cp-cert-carousel .cp-train-card {
+		min-height: clamp(150px, 24vh, 230px);
+		padding: clamp(1.1rem, 2vh, 1.6rem) clamp(1.4rem, 1.6vw, 1.8rem);
+	}
+
+	#egitimler .cp-cert-carousel .cp-train-icon {
+		width: clamp(40px, 4.8vh, 50px);
+		height: clamp(40px, 4.8vh, 50px);
+		margin-bottom: clamp(0.6rem, 1.2vh, 0.9rem);
+		border-radius: 12px;
+		font-size: clamp(1.05rem, 1.4vh, 1.2rem);
+	}
+
+	#egitimler .cp-cert-carousel .cp-train-title {
+		margin-bottom: 0.3rem;
+	}
+
+	#egitimler .cp-cert-grid {
+		margin-top: clamp(1.25rem, 2.5vh, 2rem);
+		gap: clamp(0.75rem, 1.4vh, 1.1rem);
+	}
+
+	#egitimler .cp-cert-grid .cp-train-card {
+		min-height: clamp(95px, 15vh, 150px);
+		padding: clamp(0.8rem, 1.6vh, 1.15rem) clamp(0.9rem, 1.1vw, 1.1rem);
+	}
+
+	#egitimler .cp-cert-grid .cp-train-icon {
+		width: clamp(34px, 4.2vh, 44px);
+		height: clamp(34px, 4.2vh, 44px);
+		margin-bottom: clamp(0.5rem, 1vh, 0.7rem);
+		border-radius: 10px;
+		font-size: clamp(0.95rem, 1.2vh, 1.1rem);
+	}
+
+	#egitimler .cp-cert-grid .cp-train-year {
+		top: 0.9rem;
+		right: 1rem;
+	}
+
+	#egitimler .cp-cert-grid .cp-train-title {
+		font-size: 1rem;
+		margin-bottom: 0.25rem;
+	}
+
+	#egitimler .cp-cert-grid .cp-train-desc {
+		font-size: 0.86rem;
+		line-height: 1.4;
+	}
+
+	#egitimler .owl-dots .owl-dot {
+		margin-top: clamp(16px, 2.2vh, 26px);
+	}
+}
+
+/* Psikoterapi kartları: daha yüksek oran ve rahat metin yerleşimi */
+#psikoterapi-yaklasimlari .cp-section-sub {
+	max-width: 72ch;
+	margin-inline: auto;
+	line-height: 1.8;
+}
+
+#psikoterapi-yaklasimlari .cp-origin-card {
+	display: flex;
+	min-height: 440px;
+	aspect-ratio: 3 / 5.2;
+}
+
+#psikoterapi-yaklasimlari .cp-origin-img {
+	position: absolute;
+	inset: 0;
+	height: 100%;
+	aspect-ratio: auto;
+}
+
+#psikoterapi-yaklasimlari .cp-origin-body {
+	position: relative;
+	flex: 1;
+	min-width: 0;
+	justify-content: flex-end;
+	padding: 2rem 1.35rem;
+	background: linear-gradient(to top, rgba(15, 35, 30, 0.96) 0%, rgba(15, 35, 30, 0.65) 45%, transparent 100%);
+}
+
+#psikoterapi-yaklasimlari .cp-origin-title {
+	line-height: 1.3;
+}
+
+#psikoterapi-yaklasimlari .cp-origin-desc {
+	line-height: 1.75;
+}
+
+@media (max-width: 1100px) {
+	#psikoterapi-yaklasimlari .cp-origin-card {
+		aspect-ratio: 3 / 4;
+	}
+}
+
+@media (max-width: 600px) {
+	#psikoterapi-yaklasimlari .cp-origin-card {
+		min-height: 420px;
+		aspect-ratio: 3 / 4;
+	}
+}
+/* Seans fotoğraflarında görüşme ve çalışma materyallerini kadrajda tut. */
+#psikoterapi-yaklasimlari img[src$="psikodinamik-seans.jpg"] {
+	object-position: 48% center;
+}
+#psikoterapi-yaklasimlari img[src$="act-seans.jpg"] {
+	object-position: 45% 28%;
+}
+#psikoterapi-yaklasimlari img[src$="sema-seans.jpg"] {
+	object-position: 58% center;
+}
+#psikoterapi-yaklasimlari img[src$="bdt-seans.jpg"] {
+	object-position: 74% center;
+}
+/* Tarayıcı kontrolleri: kart okunabilirliği ve mobil görünüm. */
+#psikoterapi-yaklasimlari {
+	scroll-margin-top: 80px;
+}
+#psikoterapi-yaklasimlari .cp-section-sub {
+	color: #536b62;
+}
+#psikoterapi-yaklasimlari .cp-origin-img {
+	opacity: 0.9;
+}
+#psikoterapi-yaklasimlari .cp-origin-body {
+	background: linear-gradient(to top, rgba(15, 35, 30, 0.98) 0%, rgba(15, 35, 30, 0.88) 28%, rgba(15, 35, 30, 0.35) 62%, rgba(15, 35, 30, 0.05) 100%);
+}
+#psikoterapi-yaklasimlari .cp-origin-desc {
+	font-size: 0.9375rem;
+	line-height: 1.7;
+	color: #f0f3f1;
+}
+@media (max-width: 600px) {
+	#psikoterapi-yaklasimlari .cp-origin-body {
+		padding: 1.75rem 1.35rem;
+	}
+	#psikoterapi-yaklasimlari .cp-origin-title {
+		font-size: 1.3rem;
+	}
+}
+#psikoterapi-yaklasimlari .cp-origin-card {
+	min-width: 0;
+	width: 100%;
+}
+
+/* Sertifika açıklaması masaüstünde mevcut içerik genişliğini kullanır. */
+#egitimler .cp-cert-heading .cp-section-sub {
+	max-width: none;
+	text-wrap: wrap;
+}
+
+/* Eğitimler: telefon ve tablet aralıklarında rahat kart yerleşimi. */
+@media (max-width: 991px) {
+	#egitimler .cp-train-card {
+		min-width: 0;
+	}
+	#egitimler .cp-train-title,
+	#egitimler .cp-train-desc {
+		overflow-wrap: anywhere;
+	}
+	#egitimler .cp-train-desc {
+		font-size: 0.9375rem;
+		line-height: 1.6;
+	}
+	#egitimler .cp-cert-grid .cp-train-card {
+		padding: 1.5rem 1.4rem;
+	}
+	#egitimler .cp-cert-grid .cp-train-year {
+		top: 1.5rem;
+		right: 1.4rem;
+	}
+}
+@media (min-width: 576px) and (max-width: 991px) {
+	#egitimler .cp-cert-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+/* Hakkımda: mobil ve tablette dengeli görsel/metin akışı. */
+#hakkimda {
+	scroll-margin-top: 80px;
+}
+@media (max-width: 991px) {
+	#hakkimda {
+		display: block;
+		min-height: auto;
+		padding: 4rem 0;
+	}
+	#hakkimda .cp-loyalty-inner {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 2rem;
+		align-items: start;
+	}
+	#hakkimda .cp-loyalty-img-wrap {
+		width: 100%;
+		max-width: 560px;
+		height: auto;
+		margin-inline: auto;
+	}
+	#hakkimda .cp-loyalty-img {
+		width: 100%;
+		height: auto;
+		max-height: 480px;
+		aspect-ratio: 4 / 5;
+		object-fit: cover;
+		object-position: center top;
+	}
+	#hakkimda .cp-loyalty-text {
+		min-width: 0;
+		max-width: 70ch;
+		margin-inline: auto;
+	}
+	#hakkimda .cp-loyalty-text .cp-section-sub {
+		line-height: 1.75;
+		margin-bottom: 1rem;
+		overflow-wrap: anywhere;
+	}
+	#hakkimda .cp-loyalty-text .cp-section-sub:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/* İletişim: dar ekranlarda alan ve metin taşmalarını önle. */
+.contact-layout > *,
+.contact-form-row > *,
+.contact-detail > span:last-child {
+	min-width: 0;
+}
+.contact-detail-icon {
+	flex: 0 0 3rem;
+}
+.contact-detail > span:last-child {
+	overflow-wrap: anywhere;
+}
+.contact-form input,
+.contact-form textarea {
+	display: block;
+	min-width: 0;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+@media (max-width: 991px) {
+	.contact-section { padding: 5rem 0; }
+	.contact-layout { grid-template-columns: minmax(0, 1fr); gap: 3rem; }
+	.contact-intro { padding-top: 0; }
+	.contact-form-wrap { margin-top: 0; }
+	.contact-form-row { grid-template-columns: minmax(0, 1fr); gap: 0; }
+}
+@media (max-width: 575px) {
+	.contact-form-wrap { padding: 1.5rem 1.25rem; }
+	.contact-form-wrap h2 {
+		font-size: clamp(1.5rem, 6vw, 2rem);
+		line-height: 1.3;
+		overflow-wrap: anywhere;
+	}
+	.contact-form input,
+	.contact-form textarea {
+		font-size: 1rem;
+		padding: 0.85rem 0.75rem;
+	}
+	.contact-submit {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		min-height: 48px;
+		padding-inline: 1rem;
+	}
+}
+
+/* Mobil üst menü ve açılış metni. */
+body:not(.is-expanded-menu) #header .header-row {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) auto 44px;
+	column-gap: 0.5rem;
+	align-items: center;
+	padding-block: 0.75rem;
+}
+body:not(.is-expanded-menu) #header #logo {
+	grid-column: 1;
+	grid-row: 1;
+	min-width: 0;
+	margin: 0;
+}
+body:not(.is-expanded-menu) #header #logo .menu-link {
+	padding: 0;
+	font-size: clamp(0.65rem, 1.9vw, 0.8rem);
+	line-height: 1.5;
+	letter-spacing: 0.06em;
+	white-space: normal;
+}
+body:not(.is-expanded-menu) #header .header-misc {
+	grid-column: 2;
+	grid-row: 1;
+	margin: 0;
+	padding: 0;
+}
+body:not(.is-expanded-menu) #header .header-misc .cp-btn-primary {
+	min-height: 44px;
+	padding: 0.6rem 0.85rem;
+	font-size: 0.8rem;
+}
+body:not(.is-expanded-menu) #header .primary-menu-trigger {
+	grid-column: 3;
+	grid-row: 1;
+	width: 44px;
+	margin: 0;
+}
+body:not(.is-expanded-menu) #header .cnvs-hamburger {
+	min-width: 44px;
+	min-height: 44px;
+}
+body:not(.is-expanded-menu) #header .primary-menu {
+	grid-column: 1 / -1;
+	width: 100%;
+	min-width: 0;
+}
+body:not(.is-expanded-menu) #header .primary-menu .menu-link {
+	min-height: 48px;
+	white-space: normal;
+	overflow-wrap: anywhere;
+}
+body:not(.is-expanded-menu) #home {
+	min-height: calc(100svh - 70px);
+}
+body:not(.is-expanded-menu) #home .cp-hero-inner {
+	width: 100%;
+	min-width: 0;
+	padding: 3rem 1.25rem;
+}
+body:not(.is-expanded-menu) #home h1 {
+	font-size: clamp(2rem, 6.8vw, 3.5rem);
+	line-height: 1.15;
+	margin-bottom: 1.5rem;
+	overflow-wrap: anywhere;
+}
+body:not(.is-expanded-menu) #home p {
+	font-size: 1rem;
+	line-height: 1.75;
+	margin-bottom: 0;
+}
+#header a:focus-visible,
+#header button:focus-visible {
+	outline: 3px solid #a96f5a;
+	outline-offset: 3px;
+}
+
+/* Footer: iletişim bilgileri ve telif satırının mobil yerleşimi. */
+#footer .widget,
+#footer .cp-footer-contact-item,
+#footer .cp-footer-contact-item a {
+	min-width: 0;
+}
+#footer .cp-footer-contact-item a {
+	overflow-wrap: anywhere;
+}
+#footer .cp-footer-brand p,
+#footer .cp-footer-contact-item,
+#footer .cp-footer-contact-item a,
+#footer .cp-footer-links a {
+	color: #e8e5dc;
+}
+#footer .cp-footer-social-link {
+	width: 44px;
+	height: 44px;
+	flex: 0 0 44px;
+	font-size: 1.1rem;
+	color: #f3efe8;
+}
+#footer .cp-footer-socials {
+	flex-wrap: wrap;
+}
+#footer .copyright-row {
+	height: auto;
+	min-height: 50px;
+	padding-block: 0.75rem;
+}
+#footer .copyright-text {
+	white-space: normal;
+	overflow-wrap: anywhere;
+	line-height: 1.7;
+}
+#footer .copyright-brand img {
+	max-width: 100%;
+	height: auto;
+}
+#footer a:focus-visible {
+	outline: 2px solid #f3efe8;
+	outline-offset: 4px;
+}
+@media (max-width: 767px) {
+	#footer .cp-footer-contact-item {
+		font-size: 0.9375rem;
+		line-height: 1.7;
+	}
+	#footer .copyright-text {
+		font-size: 0.8125rem;
+	}
+}
+@media (max-width: 575px) {
+	#footer .copyright-row {
+		flex-direction: column;
+		gap: 1rem;
+		padding-block: 1.25rem;
+		text-align: center;
+	}
+	#footer .copyright-brand img {
+		width: 140px;
+	}
+}
+
+#egitimler .cp-section-title {
+	color: #000;
+}
+
+/* Sıkça sorulan sorular */
+#sss { background: #f3efe8; scroll-margin-top: 80px; }
+#sss .cp-section-title { color: #1a2b28; font-size: clamp(1.6rem, 3vw, 2.3rem); }
+#sss .cp-section-sub { color: #536b62; line-height: 1.75; }
+.cp-faq-list { max-width: 900px; margin-inline: auto; }
+.cp-faq-item { background: #fff; border: 1px solid #dcded4; border-radius: 14px; margin-bottom: 1rem; overflow: hidden; }
+.cp-faq-item summary { display: flex; align-items: center; justify-content: space-between; gap: 1.25rem; padding: 1.4rem 1.5rem; min-height: 60px; color: #243329; font-size: 1.05rem; font-weight: 700; line-height: 1.5; cursor: pointer; list-style: none; overflow-wrap: anywhere; }
+.cp-faq-item summary::-webkit-details-marker { display: none; }
+.cp-faq-item summary::after { content: '+'; flex: 0 0 24px; text-align: center; color: #4f5b2a; font-size: 1.5rem; line-height: 1; }
+.cp-faq-item[open] summary::after { content: '−'; }
+.cp-faq-item[open] { border-color: #939c79; }
+.cp-faq-item summary:hover { background: #fafbf7; }
+.cp-faq-item summary:focus-visible { outline: 3px solid #74784a; outline-offset: -4px; border-radius: 12px; }
+.cp-faq-answer { padding: 0 1.5rem 1.5rem; color: #4f5d55; font-size: 1rem; line-height: 1.8; overflow-wrap: anywhere; }
+.cp-faq-answer p { margin: 0; }
+.cp-faq-contact { text-align: center; margin: 2rem 0 0.75rem; line-height: 1.7; color: #243329; }
+.cp-faq-contact a, .cp-faq-sources a { color: #4f5b2a; text-decoration: underline; text-underline-offset: 3px; }
+.cp-faq-sources { text-align: center; font-size: 0.85rem; line-height: 1.7; color: #536b62; margin-bottom: 0; }
+@media (max-width: 575px) {
+	.cp-faq-item summary { padding: 1.1rem; gap: 0.75rem; font-size: 1rem; }
+	.cp-faq-answer { padding: 0 1.1rem 1.25rem; }
+}
+
+/* SSS başlığı: diğer bölüm başlıklarıyla aynı çizgi ve harf aralığı. */
+#sss .cp-section-title {
+	position: relative;
+	display: inline-block;
+	letter-spacing: 0.06em;
+	padding-bottom: 0.45rem;
+	margin-bottom: 1.25rem;
+	font-size: clamp(1.6rem, 2.6vw, 2.3rem);
+}
+#sss .cp-section-title::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3px;
+	border-radius: 3px;
+	background: var(--cp-sand);
+	opacity: 0.85;
+}
+
+/* Açılış: temanın #home display kuralından bağımsız gerçek merkezleme. */
+#home.cp-hero,
+body.is-expanded-menu #header + #home.cp-hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#home .cp-hero-inner {
+	width: 100%;
+	min-width: 0;
+	flex-shrink: 0;
+	box-sizing: border-box;
+}
+body.is-expanded-menu #home .cp-hero-inner {
+	padding: clamp(2rem, 5vh, 4rem) 1.25rem;
+}
+#home .cp-hero-inner > p {
+	margin-bottom: 0;
+}
+
+/* Telif ve logo şeridi: toplam yükseklik en fazla 130px. */
+#footer #copyrights .container {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+#footer #copyrights .copyright-row {
+	box-sizing: border-box;
+	min-height: 0;
+	max-height: 130px;
+	padding-block: 0.75rem;
+}
+@media (max-width: 575px) {
+	#footer #copyrights .copyright-row {
+		gap: 0.5rem;
+		padding-block: 0.5rem;
+	}
+	#footer #copyrights .copyright-brand img {
+		width: 110px;
+	}
+}
+
+/* İletişim sayfasında footer sonrasında boş alan bırakma. */
+body.contact-page #wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	min-height: 100svh;
+}
+body.contact-page #header,
+body.contact-page #footer { flex-shrink: 0; }
+body.contact-page #iletisim { flex: 1 0 auto; width: 100%; }
+body.contact-page #footer { margin-bottom: 0; }
+html:has(body.contact-page), body.contact-page { background-color: #3f4922; }
+
+/* Telif alanı: sınır yalnızca iç satıra değil tüm şeride uygulanır. */
+#footer #copyrights {
+	padding: 0;
+	max-height: 130px;
+}
+#footer #copyrights .copyright-row {
+	height: 100px;
+	max-height: 130px;
+	padding-block: 8px;
+}
+#footer #copyrights .copyright-brand img {
+	width: auto;
+	max-width: 160px;
+	max-height: 72px;
+	object-fit: contain;
+}
+@media (max-width: 575px) {
+	#footer #copyrights .copyright-row {
+		height: auto;
+		min-height: 100px;
+		gap: 6px;
+	}
+	#footer #copyrights .copyright-brand img {
+		width: 96px;
+		max-height: 52px;
+	}
+}
+
+/* Şerit yüksekliği korunurken logo biraz daha büyük. */
+#footer #copyrights .copyright-brand img {
+	max-width: 175px;
+	max-height: 84px;
+}
+@media (max-width: 575px) {
+	#footer #copyrights .copyright-brand img {
+		width: 110px;
+		max-height: 58px;
+	}
+}
