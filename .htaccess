@@ -1,0 +1,36 @@
+# NiobeHosting / Apache or LiteSpeed. Publish at the domain document root.
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+# Canonical HTTPS + non-www only on the production host (leave local previews alone).
+RewriteCond %{HTTP_HOST} ^(?:www\.)?gamzekorkun\.com$ [NC]
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\.gamzekorkun\.com$ [NC]
+RewriteRule ^ https://gamzekorkun.com%{REQUEST_URI} [R=301,L,NE]
+# Redirect explicit index.html requests, not Apache's internal directory index lookup.
+RewriteCond %{THE_REQUEST} \s/+(.*/)?index\.html(?:[?\s]) [NC]
+RewriteRule ^(.*/)?index\.html$ https://gamzekorkun.com/$1 [R=301,L]
+</IfModule>
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript application/javascript application/json application/ld+json application/xml image/svg+xml
+</IfModule>
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/webp "access plus 30 days"
+ExpiresByType image/png "access plus 30 days"
+ExpiresByType image/jpeg "access plus 30 days"
+ExpiresByType font/woff2 "access plus 1 year"
+ExpiresByType text/css "access plus 7 days"
+ExpiresByType application/javascript "access plus 7 days"
+</IfModule>
+<IfModule mod_headers.c>
+<FilesMatch "\.(?:html|xml|txt)$">
+Header set Cache-Control "no-cache"
+</FilesMatch>
+</IfModule>
+<IfModule mod_alias.c>
+RedirectMatch 404 /\.(?:git|vscode|env)(?:/|$)
+</IfModule>

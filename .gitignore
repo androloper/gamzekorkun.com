@@ -1,0 +1,7 @@
+
+# Keep real mail credentials outside version control.
+/gamzekorkun-mail-config.php
+/config/contact-mail.php
+/config/*.local.php
+.env
+.env.*

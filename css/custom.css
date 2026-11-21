@@ -803,16 +803,16 @@ html {
 	}
 }
 /* Seans fotoğraflarında görüşme ve çalışma materyallerini kadrajda tut. */
-#psikoterapi-yaklasimlari img[src$="psikodinamik-seans.jpg"] {
+#psikoterapi-yaklasimlari img[src$="psikodinamik-seans.webp"] {
 	object-position: 48% center;
 }
-#psikoterapi-yaklasimlari img[src$="act-seans.jpg"] {
+#psikoterapi-yaklasimlari img[src$="act-seans.webp"] {
 	object-position: 45% 28%;
 }
-#psikoterapi-yaklasimlari img[src$="sema-seans.jpg"] {
+#psikoterapi-yaklasimlari img[src$="sema-seans.webp"] {
 	object-position: 58% center;
 }
-#psikoterapi-yaklasimlari img[src$="bdt-seans.jpg"] {
+#psikoterapi-yaklasimlari img[src$="bdt-seans.webp"] {
 	object-position: 74% center;
 }
 /* Tarayıcı kontrolleri: kart okunabilirliği ve mobil görünüm. */
@@ -1067,7 +1067,15 @@ body:not(.is-expanded-menu) #home p {
 	width: 44px;
 	height: 44px;
 	flex: 0 0 44px;
+	border: 2px solid transparent;
 	font-size: 1.1rem;
+	color: #f3efe8;
+	transition: background-color 200ms var(--ease-out), color 200ms var(--ease-out), border-color 200ms var(--ease-out);
+}
+#footer .cp-footer-social-link:hover,
+#footer .cp-footer-social-link:focus-visible {
+	background-color: transparent;
+	border-color: #e4d5ad;
 	color: #f3efe8;
 }
 #footer .cp-footer-socials {
@@ -1162,7 +1170,7 @@ body:not(.is-expanded-menu) #home p {
 
 /* Açılış: temanın #home display kuralından bağımsız gerçek merkezleme. */
 #home.cp-hero,
-body.is-expanded-menu #header + #home.cp-hero {
+body.is-expanded-menu #header + #main-content #home.cp-hero {
 	display: flex;
 	align-items: center;
 	justify-content: center;
