@@ -1188,6 +1188,20 @@ body.is-expanded-menu #home .cp-hero-inner {
 	margin-bottom: 0;
 }
 
+#home .cp-hero-btns {
+	margin-top: 1.5rem;
+}
+
+#home .cp-hero-btns .cp-btn-primary {
+	border: 1px solid #e4d5ad;
+	border-radius: 10px;
+}
+
+#home .cp-hero-btns .cp-btn-primary:focus-visible {
+	outline: 2px solid #fff;
+	outline-offset: 4px;
+}
+
 /* Telif ve logo şeridi: toplam yükseklik en fazla 130px. */
 #footer #copyrights .container {
 	padding-top: 0;

@@ -44,7 +44,7 @@ body.information-page #header, body.information-page #footer { flex-shrink: 0; }
 .cp-guide-article h2 { font-size: clamp(1.45rem, 2.2vw, 1.9rem); line-height: 1.4; color: #1a2b28; margin-bottom: 1rem; }
 .cp-guide-article h3 { font-family: var(--cnvs-body-font); font-size: 1.25rem; font-weight: 700; line-height: 1.5; margin: 2rem 0 0.75rem; color: #1a2b28; }
 .cp-guide-article p, .cp-guide-article li { font-size: 1rem; line-height: 1.85; color: #3f5146; }
-.cp-guide-article a { color: #4f5b2a; text-decoration: underline; text-underline-offset: 3px; }
+.cp-guide-article a:not(.cp-btn-primary) { color: #4f5b2a; text-decoration: underline; text-underline-offset: 3px; }
 .cp-guide [id] { scroll-margin-top: 100px; }
 .cp-guide-note { padding: 1.25rem; margin-top: 2.5rem; border-left: 3px solid #a96f5a; background: #f3efe8; color: #4f5d55; font-size: 0.9375rem; line-height: 1.8; }
 .cp-guide-sources { border-top: 1px solid #dcded4; margin-top: 2rem; padding-top: 1.5rem; overflow-wrap: anywhere; }
