@@ -5,3 +5,7 @@
 /config/*.local.php
 .env
 .env.*
+
+# Local asset build tools; hosting uses committed static bundles.
+/node_modules/
+npm-debug.log*

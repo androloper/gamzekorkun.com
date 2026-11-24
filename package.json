@@ -1,0 +1,14 @@
+{
+  "name": "gamzekorkun-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:assets": "node tools/build-assets.mjs"
+  },
+  "devDependencies": {
+    "postcss": "8.5.33",
+    "purgecss": "7.0.2",
+    "terser": "5.51.4"
+  }
+}

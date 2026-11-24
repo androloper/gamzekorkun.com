@@ -14,16 +14,16 @@
 	display: grid;
 	grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
 	gap: clamp(3rem, 8vw, 8rem);
-	align-items: start;
+	align-items: stretch;
 }
 
 .contact-intro {
-	padding-top: 1.5rem;
+	padding-top: 0;
 }
 
 .contact-eyebrow {
 	color: #74784a;
-	display: inline-block;
+	display: block;
 	font-size: 0.75rem;
 	font-weight: 700;
 	letter-spacing: 0.18em;
@@ -43,6 +43,8 @@
 	line-height: 1.8;
 	max-width: 29rem;
 }
+
+.contact-intro > :last-child { margin-bottom: 0; }
 
 .contact-details {
 	display: grid;
@@ -84,7 +86,7 @@
 .contact-form-wrap {
 	background: #fff;
 	box-shadow: 0 1.5rem 4rem rgba(45, 48, 37, 0.08);
-	margin-top: -1.5rem;
+	margin-top: 0;
 	padding: clamp(2rem, 5vw, 4rem);
 }
 
@@ -141,6 +143,23 @@
 }
 
 .contact-submit i { margin-left: 0.5rem; }
+
+/* Masaüstünde form kutusu sol metinle aynı üst ve alt hizayı paylaşır. */
+@media (min-width: 992px) {
+	.contact-form-wrap,
+	.contact-form {
+		display: flex;
+		flex-direction: column;
+	}
+	.contact-form { flex: 1; }
+	.contact-form > .form-group {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+	}
+	.contact-form textarea { flex: 1; }
+	.contact-submit { align-self: flex-start; }
+}
 
 .copyright-row {
 	align-items: center;
